@@ -13,7 +13,7 @@
   function node(tag, cls, content) { const el=document.createElement(tag); if(cls) el.className=cls; if(content!==undefined) el.textContent=content; return el; }
   function filter() {
     const q=state.query.trim().toLocaleLowerCase();
-    const result=data.filter(item=>typeMatch(item) && (state.category==='전체 분야'||item.category===state.category) && (!state.savedOnly||favorites.has(item.id)) && (!q||[item.title,item.description,item.category,item.kind,item.source,item.detail].join(' ').toLocaleLowerCase().includes(q)));
+    const result=data.filter(item=>typeMatch(item) && (state.category==='전체 분야'||item.category===state.category) && (!state.savedOnly||favorites.has(item.id)) && (!q||[item.title,item.url,item.description,item.category,item.kind,item.source,item.detail].join(' ').toLocaleLowerCase().includes(q)));
     if(state.sort==='name') result.sort((a,b)=>a.title.localeCompare(b.title,'ko'));
     if(state.sort==='category') result.sort((a,b)=>a.category.localeCompare(b.category,'ko')||a.title.localeCompare(b.title,'ko'));
     return result;
