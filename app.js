@@ -2,6 +2,12 @@
   'use strict';
   const data = Array.isArray(window.ARCHIVE_DATA) ? window.ARCHIVE_DATA : [];
   const analysis = window.ARCHIVE_ANALYSIS || {};
+  const accessNotes={
+    '5793c9e5f534':'원래 받은 북마크 주소와 사이트 첫 주소가 모두 Netlify 404입니다. 김경순님이 보내신 원문에 다른 접속 주소나 계정 정보는 없었습니다. 운영자나 공유자에게 새 주소를 받아야 합니다.',
+    '607e1fdbede9':'원래 받은 GitHub 저장소와 소유자 주소에서 모두 404가 확인됩니다. 삭제·비공개·이전 중 어느 경우인지는 확인할 수 없어, 공유자에게 현재 주소나 초대 여부를 확인해야 합니다.',
+    'f03e0c96d966':'원래 Threads 공유 주소가 invalid_post로 이동합니다. 최초 미리보기에는 Unslopping 디자인 스킬로 표시됐지만 원본 주소나 작성자는 확인되지 않았습니다. 공유자에게 원본 게시물 주소를 다시 받아야 합니다.',
+    '5c94112f2a23':'원래 Threads 공유 주소가 invalid_post로 이동하며 최초 미리보기에도 제목이 없었습니다. 게시물 내용이나 대체 주소를 특정할 근거가 없으므로 공유자에게 원문을 다시 요청해야 합니다.'
+  };
   const $ = (id) => document.getElementById(id);
   const state = { query:'', type:'전체', category:'전체 분야', sort:'curated', limit:18, savedOnly:false };
   let favorites = new Set();
@@ -28,6 +34,7 @@
     const badges=node('div','badges'); for(const value of [item.category,item.kind,item.status])badges.append(node('span','badge',value));target.append(badges);
     const section=(title,text,cls='')=>{if(!text)return;const block=node('section','detail-section '+cls);block.append(node('h3','',title),node('p','',text));target.append(block)};
     section('무엇을 하는 자료인가요?',item.description,'intro');
+    if(accessNotes[item.id]){section('2026.11.16 접속 점검',accessNotes[item.id],'caution');const a=node('a','audit-detail-link','원래 링크와 확인 방법 보기 ↗');a.href='access.html#'+item.id;target.append(a)}
     section('어디에 활용할 수 있나요?',info.use);
     section('기대할 수 있는 장점',info.good,'positive');
     section('한계와 확인할 점',info.limits,'caution');
