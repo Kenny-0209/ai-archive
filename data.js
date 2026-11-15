@@ -110,17 +110,6 @@ window.ARCHIVE_DATA = [
     "detail": "사용자가 제공한 원문 설명을 기준으로 정리했습니다. 각 저장소의 전체 스킬·코드와 실제 동작은 별도 검토가 필요합니다."
   },
   {
-    "id": "607e1fdbede9",
-    "title": "Copycat Skill",
-    "url": "https://github.com/minosdevs/copycat-skill",
-    "description": "Playwright 기반 웹사이트 시각적 복제 — 접근 확인: 404",
-    "category": "웹 재구현",
-    "kind": "저장소",
-    "status": "제공 설명",
-    "source": "10월 31일 도구 목록",
-    "detail": "사용자가 제공한 원문 설명을 기준으로 정리했습니다. 각 저장소의 전체 스킬·코드와 실제 동작은 별도 검토가 필요합니다."
-  },
-  {
     "id": "ce8e36a6c436",
     "title": "Pixel Perfect Web Replica",
     "url": "https://github.com/Core-Mate/Pixel-Perfect-Web-Replica",
@@ -547,17 +536,6 @@ window.ARCHIVE_DATA = [
     "kind": "참고 사이트",
     "status": "제공 설명",
     "source": "10월 31일 디자인 목록",
-    "detail": ""
-  },
-  {
-    "id": "5793c9e5f534",
-    "title": "ACA 북마크",
-    "url": "https://aca-info-preview.netlify.app/ko/note/bookmarks",
-    "description": "북마크 모음. 접근 제한으로 세부 내용 미확인.",
-    "category": "기타",
-    "kind": "참고 사이트",
-    "status": "확인 필요",
-    "source": "기존 링크 재조사",
     "detail": ""
   },
   {
@@ -1177,17 +1155,6 @@ window.ARCHIVE_DATA = [
     "detail": ""
   },
   {
-    "id": "f03e0c96d966",
-    "title": "디자인 보정 스킬",
-    "url": "https://www.threads.com/share/BAemZ_Pq_F/",
-    "description": "이전 카카오톡 미리보기 기준. 현재 링크는 invalid_post로 본문 확인 불가.",
-    "category": "게시물",
-    "kind": "Threads",
-    "status": "확인 필요",
-    "source": "10월 31일 Threads",
-    "detail": ""
-  },
-  {
     "id": "cc413b90424a",
     "title": "Graphify",
     "url": "https://www.threads.com/share/BAVd4nn7OX/",
@@ -1232,17 +1199,6 @@ window.ARCHIVE_DATA = [
     "detail": ""
   },
   {
-    "id": "5c94112f2a23",
-    "title": "내용 확인 불가",
-    "url": "https://www.threads.com/share/BATGcXUwCI/",
-    "description": "현재 invalid_post로 본문을 확인하지 못했다.",
-    "category": "게시물",
-    "kind": "Threads",
-    "status": "확인 필요",
-    "source": "10월 31일 Threads",
-    "detail": ""
-  },
-  {
     "id": "db1a2ee98bd4",
     "title": "앱을 처음 켰을 때 거치는 아홉 화면",
     "url": "https://www.instagram.com/reel/Dfj6PYcEa3O/",
@@ -1274,17 +1230,6 @@ window.ARCHIVE_DATA = [
     "status": "게시물·일부 화면",
     "source": "Instagram 릴스·카드",
     "detail": "- 원문: https://www.instagram.com/reel/Dfug2YmzPTh/ — `muhammadalim_s`.\n- 확인: 게시물 설명과 영상의 Liquid Glass 예시 화면. 12가지 전체와 14개 구성요소의 목록은 확보하지 못했다.\n\n작성자는 동일한 14개 컴포넌트를 서로 다른 12개 시각 스타일로 표현했다고 설명한다. 본문에서 리퀴드 글라스, 연주 가능한 신시사이저, 1비트 복고 데스크톱, 스케치북 스타일을 예로 언급한다. 관찰된 영상 화면에도 Liquid Glass 대시보드가 나온다.\n\n실용적인 관점에서는 **기능을 유지하면서 색·재질·서체·표면 표현이 화면의 인상을 어떻게 바꾸는지 비교하는 참고 자료**다. 게시자는 ‘Claude Fable 5.2’로 제작했다고 주장하지만 별도 모델 검증이나 실제 코드는 확인하지 않았다. 12개 프롬프트와 작업 절차는 게시자가 댓글을 통해 제공한다고 하며, 해당 자료를 받지 않았다."
-  },
-  {
-    "id": "599759b129c5",
-    "title": "접근할 수 없는 릴스",
-    "url": "https://www.instagram.com/reel/DfqW6SkSkzX/",
-    "description": "주제, 특정 스킬, 영상 내용을 추정하지 않는다. 해당 계정으로 열 수 있는 경우 영상 자막이나 주요 화면을 제공받아야 상세 분석이 가능하다.",
-    "category": "게시물",
-    "kind": "Instagram",
-    "status": "접근 제한",
-    "source": "Instagram 릴스·카드",
-    "detail": "- 원문: https://www.instagram.com/reel/DfqW6SkSkzX/.\n- 확인: 연령 제한 및 로그인 안내만 확인. 본문과 영상에 접근하지 못했다.\n\n주제, 특정 스킬, 영상 내용을 추정하지 않는다. 해당 계정으로 열 수 있는 경우 영상 자막이나 주요 화면을 제공받아야 상세 분석이 가능하다."
   },
   {
     "id": "653708d4a741",
