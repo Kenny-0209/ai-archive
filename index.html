@@ -5,7 +5,7 @@
   <meta name="theme-color" content="#f5f4ee">
   <title>AI 자료 아카이브</title>
   <meta name="description" content="모아 둔 AI 스킬과 디자인 자료, 게시물을 검색하는 개인 자료실">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   <script defer src="data.js?v=5"></script><script defer src="analysis.js?v=5"></script><script defer src="app.js?v=5"></script>
 </head>
 <body>
@@ -13,6 +13,12 @@
   <main id="top">
     <section class="hero wrap"><div class="hero-copy"><div class="eyebrow"><span class="dot"></span> 나를 위한 AI 자료 모음 <span class="sep">/</span> 2026.11</div><h1>흩어져 있던 영감,<br><em>한곳에서 다시.</em></h1><p>저장해 둔 AI 스킬과 디자인 자료, 게시물을<br class="desktop"> 필요할 때 쉽게 찾을 수 있도록 모았습니다.</p><div class="hero-actions"><a class="primary" href="#archive">자료 찾아보기 <span>↘</span></a><a class="secondary" href="#method">정리 기준 보기 <span>↗</span></a></div></div><div class="hero-art" aria-hidden="true"><div class="art-label">COLLECTED IDEAS <span>✳</span></div><div class="art-card back"><span>01 / RESEARCH</span><div class="art-line short"></div><div class="art-line"></div><div class="art-line mid"></div><div class="art-circle">✳</div></div><div class="art-card front"><span>02 / DESIGN & TOOLS</span><strong>Ideas<br>worth<br><i>keeping.</i></strong><div class="art-footer"><span>REFERENCE INDEX</span><span>↗</span></div></div><div class="art-caption">SAVE THE GOOD ONES <span>✦</span></div></div></section>
     <section class="stats wrap" aria-label="자료 현황"><div><span>자료</span><strong id="totalCount">—</strong><small>개별 링크와 모음 내 항목</small></div><div><span>스킬·관련 저장소</span><strong id="skillCount">—</strong><small>저장소별 세부 구성은 별도 확인</small></div><div><span>게시물</span><strong id="postCount">—</strong><small>Instagram · Threads</small></div><div class="stat-note"><span>마지막 정리</span><strong>11.16</strong><small>2026년 기준</small></div></section>
+    <nav class="wrap collection-nav" aria-label="UI 동작 사례">
+      <a href="motion/">
+        <span><strong>UI 동작 사례</strong><small>Origin Kit의 시연 영상과 직접 체험</small></span>
+        <span class="collection-action">둘러보기 <span aria-hidden="true">↗</span></span>
+      </a>
+    </nav>
     <section class="archive wrap" id="archive"><div class="section-heading"><div><div class="eyebrow muted">THE COLLECTION <span class="sep">/</span> 탐색하기</div><h2>필요한 자료를 찾아보세요<span>.</span></h2><p>이름, 주제, 설명으로 검색하고 원하는 자료를 골라보세요.</p></div><div class="section-number">01 <span>/ 02</span></div></div>
       <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="스킬 이름이나 관심 주제를 검색해 보세요" autocomplete="off"><kbd>/</kbd></label><button id="savedToggle" class="save-toggle" type="button" aria-pressed="false">☆ <span>저장한 자료</span></button></div>
       <div class="filter-row"><div id="typeFilters" class="chips" aria-label="자료 종류"></div><label class="sort-label">정렬 <select id="sort"><option value="curated">추천 순서</option><option value="name">이름 순서</option><option value="category">분야 순서</option></select></label></div>

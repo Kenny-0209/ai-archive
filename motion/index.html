@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ee">
+  <meta name="description" content="Origin Kit의 UI 인터랙션과 모션을 분야별로 찾아보고 시연 영상을 재생합니다.">
+  <title>UI 동작 사례 · AI 자료 아카이브</title>
+  <link rel="stylesheet" href="motion.css">
+  <script defer src="catalog.js"></script>
+  <script defer src="motion.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">ai.</span> AI 자료 아카이브</a>
+      <a class="back-link" href="../index.html">아카이브 홈 <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">ORIGIN KIT <span aria-hidden="true">/</span> 2026.11.16</p>
+      <h1 id="page-title">UI 동작 사례<span>.</span></h1>
+      <p>텍스트, 이미지, 배경과 인터랙션 효과를 찾아 시연 영상으로 확인하고 원본에서 직접 조작해 보세요.</p>
+    </section>
+    <section class="catalog" aria-label="사례 탐색">
+      <div class="tools">
+        <label for="query">사례 검색<input id="query" type="search" placeholder="이름이나 태그 검색" autocomplete="off"></label>
+        <label for="category">분야<select id="category"><option value="">전체 분야</option></select></label>
+      </div>
+      <div class="results-head">
+        <p id="count" role="status"></p>
+        <button id="reset" type="button" class="plain">검색 초기화</button>
+      </div>
+      <div id="grid" class="grid"></div>
+      <p id="empty" class="empty" hidden>조건에 맞는 사례가 없습니다.</p>
+      <button type="button" id="more" class="more" hidden>사례 더 보기 <span aria-hidden="true">↓</span></button>
+      <noscript><p>사례를 검색하려면 브라우저에서 JavaScript를 켜 주세요.</p></noscript>
+    </section>
+  </main>
+  <footer class="wrap">시연 영상과 인터랙션 출처 <a href="https://www.originkit.dev/components">Origin Kit</a></footer>
+  <dialog id="preview" aria-labelledby="preview-title">
+    <header class="dialog-head">
+      <div><p id="preview-category" class="eyebrow"></p><h2 id="preview-title"></h2></div>
+      <form method="dialog"><button class="control close" autofocus>닫기 <span aria-hidden="true">×</span></button></form>
+    </header>
+    <div class="preview-actions">
+      <button id="show-video" type="button" class="control" aria-pressed="false">시연 영상</button>
+      <button id="show-live" type="button" class="control" aria-pressed="false">직접 체험</button>
+      <a id="original" class="control open-original" target="_blank" rel="noopener noreferrer">원본 새 탭 <span aria-hidden="true">↗</span></a>
+      <a id="local-source" class="control" download hidden>로컬 TSX</a>
+    </div>
+    <div id="stage" class="stage"></div>
+    <p id="preview-note" class="preview-note" role="status"></p>
+  </dialog>
+</body>
+</html>
